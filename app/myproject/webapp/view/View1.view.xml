@@ -1,0 +1,32 @@
+<mvc:View
+    xmlns:form="sap.ui.layout.form"
+    controllerName="com.sap.myproject.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <form:SimpleForm>
+                <form:content>
+                    <Label text="ProductID" />
+                    <Input id="productID"  />
+                    <Label text="Product Name" />
+                    <Input id="productName"  />
+                    <Label text="Quantity" />
+                    <Input id="quantity"  />
+                    <Label text="Created By" />
+                    <Input id="createdBy"  />
+                </form:content>
+            </form:SimpleForm>
+        </content>
+        <Toolbar>
+            <ToolbarSpacer />
+            <Button text="Save" press="onSave" type="Success"/>
+            <Button text="Cancel" press="onCancel" type="Reject"/>
+        </Toolbar>
+    </Page>
+</mvc:View>

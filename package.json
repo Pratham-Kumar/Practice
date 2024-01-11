@@ -1,0 +1,33 @@
+{
+  "name": "Practice-project",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^7",
+    "@sap/cds-hana": "^2",
+    "@sap/cds-odata-v2-adapter-proxy": "^1.9.21",
+    "@sap/hana-client": "^2.19.21",
+    "@sap/xssec": "^3",
+    "express": "^4",
+    "passport": "^0"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^7",
+    "@sap/hdi-deploy": "^4.9.1"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "cds": {
+    "requires": {
+      "db": "hana"
+    },
+    "hana": {
+      "deploy-format": "hdbtable"
+    }
+  }
+}
